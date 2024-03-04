@@ -1,7 +1,7 @@
 # Lore Counter
 
 def loreCounter():
-    print("==============================================================")
+    print("===============================================================================")
     print("Welcome! This is the Lore Counter to keep track of your score during your game.\n")
 
     loreTracker = {} # Create empty dictionary for counter
@@ -53,5 +53,3 @@ def loreCounter():
             print(f"{playerNum} won the game with {loreTracker.get(playerNum)} lore! Congrats!")
             print("=================== End Game ===================")
             winTracker = True # End game
-
-    #menuPrompt()

@@ -81,15 +81,16 @@ def filterSQL():
 
     # Create Query to find filter search
     SQLquery = "SELECT cardName,inkColor,inkCost,cardType,inkAble,charClass,cardRarity,charAbility FROM lorcana WHERE "
-    # Cleaning format to work in SQL
+
+    # Building the query using the dictionary
     for key,values in masterInput_dict.items():
         SQLquery += "("
         if (key == 'charClass') or (key == 'charAbility'): # Due to LIKE, we want to include cards that includes these keywords separately
             for vals in values:
-                SQLquery += key + " LIKE '" + str(vals).replace("[","").replace("]","").replace("{","").replace("}","") + "' OR "
+                SQLquery += key + " LIKE '" + str(vals).replace("[","").replace("]","").replace("{","").replace("}","") + "' OR " # Cleaning format
             SQLquery = SQLquery[0:SQLquery.rindex('OR')] # Removing last OR from query
         else:
-            SQLquery += key + " in (" + str(values).replace("[","").replace("]","").replace("{","").replace("}","") + ")"
+            SQLquery += key + " in (" + str(values).replace("[","").replace("]","").replace("{","").replace("}","") + ")" # Cleaning format
         SQLquery += ")"
         SQLquery += ' AND '
     SQLquery = SQLquery[0:SQLquery.rindex('AND')] # Removing last AND from query
