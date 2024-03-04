@@ -1,0 +1,77 @@
+Ready to play Disney Lorcana TCG? Here is a step by step guide.
+
+======================
+    Deck Building
+======================
+Deck building in Disney Lorcana is a whole other topic that won't be explored in too much depth here. The three main rules are that each player must have a deck of at least 60 cards, each deck can contain only two Ink types (Amber, Amethyst, Emerald, Ruby, Sapphire, and Steel), and each deck can have no more than four copies of a card in it.
+
+
+======================
+        Setup 
+======================
+Now that all players have their Lorcana decks ready, it's time to set up the game. Each player should shuffle their deck and draw a hand of seven cards. Disney Lorcana allows players to alter their starting hand one time at the start of the game.
+
+To do this, players can put as many cards as they want from their hand to the bottom of their deck and draw new cards to replace them before reshuffling the deck. Finally, pick which player will go first.
+
+
+======================
+     How to Win 
+======================
+Disney Lorcana is unique from other trading card games because players do not win by defeating their opponent. Instead, each player attempts to be the first to reach 20 Lore. Find something to use as a Lore tracker (a piece of paper, an app, or anything capable of counting from 0 to 20) and set it to 0. Players' actions throughout the game will grant them lore, and the game ends immediately once a player hits 20 Lore.
+
+
+======================
+   Beginning Phase 
+======================
+Each player's turn is split into a Beginning Phase and a Main Phase. The Beginning Phase is divided into three steps: Ready, Set, and Draw.
+
+- Ready: Ready all cards on the player's field by turning them upright.
+- Set: Resolve any card effects that take place at the start of the player's turn.
+- Draw: Draw a card from the deck.
+
+
+======================
+     Main Phase 
+======================
+The Main Phase is where all the action of Disney Lorcana happens. Players are able to take any of the following actions in any order. There's no limit to how many times an action can be performed unless otherwise specified. Usually, actions are limited by the amount of Ink players have available to them to spend.
+
+- Once per turn, players can put a card facedown in their Inkwell. This allows it to be used as Ink to play other cards.
+- Play a card
+- Use a character ability
+- Use an item ability
+- Send a character on a quest
+- Use a character in a challenge
+
+=== Understanding the Inkwell
+The Inkwell is a vital part of playing Disney Lorcana, allowing players to play cards and use abilities. Once per turn, players can take any card with the gold ring around their cost and place it face down in the Inkwell. It will remain there for the rest of the game.
+
+During their Main Phase, if a card or ability has an Ink cost, players must Exert (turn sideways) that number of cards in their Inkwell to play or use it. All cards in the Inkwell are Readied (flipped back upright) during the Beginning Phase.
+
+=== Play a Card
+To play a card, players must pay the Ink cost found in the upper lefthand corner of the card. Exert that many cards in the Inkwell and then play the card in the Ready position above the Inkwell. There are three kinds of cards, and each works slightly differently when played.
+
+- Character Cards like Rapunzel, Letting Down Her Hair are played in the Ready position but cannot be Exerted on the turn they are played. This means they cannot challenge opponents, quest, or use any ability that requires them to Exert.
+- Item Cards like Dinglehopper are played in the Ready position and can be used immediately after they are played.
+- Effect Cards like Dragon Fire are played and then immediately discarded. Resolve their effects as soon as they are played.
+- Song Cards are Effect Cards that have an additional rule. Instead of paying the Ink cost, players can choose to exert a character to sing the Song for free. The character's cost must be of the specified value or higher.
+
+=== Use Character and Item Abilities
+Card abilities explain what they do and what they cost right on the card. Simply pay the cost first and then activate the ability. An ability may require the player to spend a certain amount of Ink and/or Exert the card using the ability.
+
+Just remember that Character cards cannot be exerted on the turn they are played. There aren't a lot of character cards with active abilities, but that might change as Lorcana introduces new sets of cards.
+
+=== Questing
+Quests are the main way to gain Lore in Disney Lorcana and win the game. To quest, players simply need to Exert a character card. Doing so rewards the player with an amount of Lore shown on the side of the card (the diamond-looking symbol, usually one to four).
+
+The Mickey Mouse, Brave Little Tailor card above earns four Lore from each quest, but a card like Olaf, Friendly Snowman only gains one. Keep in mind that Character cards cannot Exert for quests or any other reason on the turn they are played.
+
+=== Challenging
+Challenges are one way Lorcana players can interact with each other. To challenge, Exert one Character Card and choose an opponent's Character Card that is already exerted. Both cards deal damage equal to their Strength value to the other card. If any card has damage on it equal to or greater than its Willpower, that card is banished and moved to the Discard Pile.
+
+IMPORTANT: Players cannot challenge a card in the Ready position. Only Exerted cards may be challenged.
+
+
+======================
+   Ending the Game 
+======================
+Each player will take turns going through the Beginning Phase and the Main Phase, with play moving clockwise around the table. If a player is required to draw a card and cannot, they immediately lose. Alternatively, the game ends once any player reaches 20 Lore.
