@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
-    body { background-color: rgb(246, 237, 240); }
+    body { 
+        background-color: rgb(255, 249, 237); 
+    }
 
     .header-img {
         width: 175px;
@@ -20,15 +22,15 @@
     }
 
     .menu-img {
-        width: 300px;
+        width: 250px;
         border-radius: 25px;
         border: 7px solid #db8c8c;
     }
 
     .menu-desc { 
         margin: 0;
-        width: 310px; 
-        height: 100px;
+        width: 250px; 
+        height: 115px;
     }
 
     .customer_order {
@@ -36,9 +38,17 @@
         text-align: right;
     }
 
-    h3 { color: #db8c8c; }
+    .order-price {
+        color: #729B79;
+    }
 
-    strong { color: #729B79; }
+    h3 { 
+        color: #db8c8c; 
+    }
+
+    strong { 
+        color: #729B79; 
+    }
 
     form {
         margin: 0 auto;
@@ -56,6 +66,10 @@
     }
 
 </style>
+<!-- 
+    pink: body { background-color: rgb(246, 237, 240); } 
+    yellow: body { background-color: rgb(240, 234, 228); }
+-->
 <head>
     <hr style="border: 2px solid #db8c8c;">
     <hr style="border: 3px solid #729B79;">
@@ -78,7 +92,7 @@
     <main>
         <section id="menu-section" style="text-align: center;">
             <h2 style="margin-top: 50px; color: #729B79;">. ݁₊ ⊹ . ݁ M e n u ݁ . ⊹ ₊ ݁</h2>
-            <div class="menu-item-row">
+            <div>
                 <article class="items">
                     <h3>Ham Sandwich</h3>
                     <img class="menu-img" alt="studio-ghibli-sammich" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/01/Ponyo-Sandwich.jpg?q=50&fit=crop&w=1500&dpr=1.5">
@@ -94,23 +108,23 @@
                 <article class="items">
                     <h3>Calcifer's Breakfast Platter</h3>
                     <img class="menu-img" alt="studio-ghibli-breakfast" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/04/calcifer-bacon-burn-Howls-Moving-Castle.jpg?q=50&fit=crop&w=1500&dpr=1.5">
-                    <hr><p class="menu-desc">Nothing says comfort like fried breakfast food and the bacon and eggs served in Howl's Moving Castle are a hearty way to start the day. Cooked by Sophie and Howl over Calcifer's tamed flame.
+                    <hr><p class="menu-desc">Nothing says comfort like fried breakfast food and the bacon and eggs served in Howl's Moving Castle. Cooked by Sophie and Howl over Calcifer's tamed flame.
                         <br><hr><strong><i>$10.00</i></strong></p>
                 </article>
                 <article class="items">
                     <h3>Totoro's Bento Box</h3>
                     <img class="menu-img" alt="totoro-bento-box" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/bento-box-totoro.jpg?q=50&fit=crop&w=1500&dpr=1.5">
-                    <hr><p class="menu-desc">Bento boxes are often prepared as lunches for loved ones, as seen in the movie when Satsuki makes one for little sister Mei. The bento presented is composed of edamame, rice, Japanese plum, and shishamo.
+                    <hr><p class="menu-desc">Bento boxes are often prepared as lunches for loved ones, Satsuki makes one for little sister Mei. The bento presented is composed of edamame, rice, Japanese plum, and shishamo.
                         <br><hr><strong><i>$10.00</i></strong></p>
                 </article>
                 <article class="items">
                     <h3>Herring & Pumpkin Pie</h3>
                     <img class="menu-img" alt="kiki-herring-pumpkin-pie" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/01/Herring-and-Pumpkin-Pie-in-Kikis-Delivery-Service.jpg?q=50&fit=crop&w=1500&dpr=1.5">
-                    <hr><p class="menu-desc">Of all the deliveries that Kiki makes in Kiki's Delivery Service, none is more inviting than the herring and pumpkin pie she transports for a customer who bakes it as a birthday gift for her granddaughter.
+                    <hr><p class="menu-desc">Of all the deliveries that Kiki makes, none is more inviting than the herring and pumpkin pie she transports for a customer who bakes it as a birthday gift for her granddaughter.
                         <br><hr><strong><i>$10.00</i></strong></p>
                 </article>
             </div>
-            <div class="menu-item-row">
+            <div>
                 <article class="items">
                     <h3>Soot Sprite's Konpeitō</h3>
                     <img class="menu-img" alt="spirited-away-konpeitō" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/01/Soot-sprites-eating-Konpeito-in-Spirited-Away.jpg?q=50&fit=crop&w=1500&dpr=1.5">
@@ -120,13 +134,13 @@
                 <article class="items">
                     <h3>Kiki's Chocolate Cake</h3>
                     <img class="menu-img" alt="kikis-delivery-cake" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/01/Chocolate-cake-from-Kikis-Delivery-Service.jpg?q=50&fit=crop&w=1500&dpr=1.5">
-                    <hr><p class="menu-desc">After all of her hard work delivering the herring pie, Kiki later returns to the old lady who hired her for the job and is met with a surprise; a chocolate cake iced with her name and silhouette.
+                    <hr><p class="menu-desc">Kiki later returns to the old lady who hired her for the job and is met with a surprise; a chocolate cake iced with her name and silhouette.
                         <br><hr><strong><i>$6.00</i></strong></p>
                 </article>
                 <article class="items">
                     <h3>Vegetable Soup in the Sky</h3>
                     <img class="menu-img" alt="castle-in-the-sky-veg-soup" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/from-up-on-poppy-hill.jpg?q=50&fit=crop&w=1500&dpr=1.5">
-                    <hr><p class="menu-desc">A stew prepared with dashi broth and winter vegetables, nimono is a hearty and comforting dish perfect for a cold night.
+                    <hr><p class="menu-desc">The nimono from Castle in the Sky, a stew prepared with dashi broth and winter vegetables, nimono is a hearty and comforting dish perfect for a cold night.
                         <br><hr><strong><i>$6.00</i></strong></p>
                 </article>
                 <article class="items">
@@ -138,7 +152,7 @@
                 <article class="items">
                     <h3>Porco Rosso's Spaghetti</h3>
                     <img class="menu-img" alt="porco-rosso-spaghetti" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/porco-rosso-spaghetti.jpg?q=50&fit=crop&w=1500&dpr=1.5">
-                    <hr><p class="menu-desc">Porco Rosso sees its protagonist enjoy a great helping of spaghetti bolognese after fending off pirates.
+                    <hr><p class="menu-desc">Porco Rosso sees its protagonist enjoy a great helping of spaghetti bolognese after fending off pirates. Spaghetti bolognese is pasta accompanied with a meat sauce.
                         <br><hr><strong><i>$10.00</i></strong></p>
                 </article>
             </div>
@@ -151,29 +165,31 @@
                 <form>
                     <h3 style="height: 10px;">⟡ Entree ⟡</h3>
                     <p style="text-align: left; width: 300px; height: 45px; margin: auto;">Enter the number of orders you'd like to place for each item.</p>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Ham Sandwich</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Ramen Surprise</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Calcifer's Breakfast Platter</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Totoro's Bento Box</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Herring & Pumpkin Pie</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Soot Sprite's Konpeitō</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Kiki's Chocolate Cake</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Vegetable Soup in the Sky</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Spirited Sponge Cake</label><br>
-                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Porco Rosso's Spaghetti</label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Ham Sandwich » </label><label class="order-price"><b>$8</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Ramen Surprise » </label><label class="order-price"><b>$12</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Calcifer's Breakfast Platter » </label><label class="order-price"><b>$10</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Totoro's Bento Box » </label><label class="order-price"><b>$10</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Herring & Pumpkin Pie » </label><label class="order-price"><b>$10</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Soot Sprite's Konpeitō » </label><label class="order-price"><b>$5</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Kiki's Chocolate Cake » </label><label class="order-price"><b>$6</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Vegetable Soup in the Sky » </label><label class="order-price"><b>$6</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Spirited Sponge Cake » </label><label class="order-price"><b>$5</b></label><br>
+                    <input class="customer_order" type="number" min="0" max="10" value="0" required><label> ⟡ Porco Rosso's Spaghetti » </label><label class="order-price"><b>$10</b></label><br>
                     <br><hr>
                     <h3 style="height: 10px;">⟡ Sides ⟡</h3>
                     <p style="text-align: left; width: 300px; height: 45px; margin: auto;">Check the boxes of the sides you'd like to include with your meal.</p>
-                    <input type="checkbox" name="side_choices"><label> ⟡ Fries</label><br>
-                    <input type="checkbox" name="side_choices"><label> ⟡ Tator Tots</label><br>
-                    <input type="checkbox" name="side_choices"><label> ⟡ Onion Rings</label><br>
-                    <input type="checkbox" name="side_choices"><label> ⟡ Miso Soup</label><br>
-                    <input type="checkbox" name="side_choices"><label> ⟡ House Salad</label><br>
+                    <input type="checkbox" name="side_choices"><label> ⟡ Fries » </label><label class="order-price"><b>$3</b></label><br>
+                    <input type="checkbox" name="side_choices"><label> ⟡ Tator Tots » </label><label class="order-price"><b>$3</b></label><br>
+                    <input type="checkbox" name="side_choices"><label> ⟡ Onion Rings » </label><label class="order-price"><b>$3</b></label><br>
+                    <input type="checkbox" name="side_choices"><label> ⟡ Miso Soup » </label><label class="order-price"><b>$2</b></label><br>
+                    <input type="checkbox" name="side_choices"><label> ⟡ House Salad » </label><label class="order-price"><b>$2</b></label><br>
                     <br><hr>
                     <h3 style="color: #db8c8c; height: 1px;"><b>⟡ Special Requests or Allergies ⟡</b></h3><br>
                     <textarea rows="5" cols="35" placeholder="Requests or Allergies here!"></textarea><br>
                     <br>
-                    <input type="submit" value="Go To Checkout" style="color:#729B79; border-radius: 5px; border: 2px solid #729B79;">
+                    <div style="text-align: center;">
+                        <input type="submit" value="Go To Checkout" style="color:#729B79; font-weight: bold; border-radius: 5px; border: 1px solid #729B79;">
+                    </div>
                 </form>
             </div>
         </section>
