@@ -101,6 +101,12 @@ h3 {
     font-size: 15px;
 }
 
+.hr-about {
+    width: 60%;
+    border-top: 5px dotted rgb(247, 242, 236);
+    border-bottom: none;
+}
+
 /* === Learning Section === */
 h5 {
     width: 25%;
@@ -115,18 +121,37 @@ h5 {
 
 #certificates-container {
     width: 100%;
-    margin: auto;
     display: flex;
     justify-content: center;
 }
 
 .certificate-img-container {
+    width: 40%;
+    height: auto;
     display: inline-block;
 }
 
-#certificate-img {
-    width: 250px;
-    height: auto;
+#certificate-python {
+    background-image: url(certificate_python.png);
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+}
+
+#certificate-html {
+    background-image: url(certificate_html.png);
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-size: 100% 100%;
+}
+
+
+.hr-learning {
+    width: 60%;
+    border-top: 5px dotted #afa79c;
+    border-bottom: none;
 }
 
 /* === 30 Nites of Code === */
