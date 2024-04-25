@@ -1,12 +1,12 @@
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 75%;
+    max-width: 70%;
     min-width: 900px;
     height: 100%;
     margin: auto;
     text-align: center;
-    border-left: 3px solid rgb(135, 126, 126);
-    border-right: 3px solid rgb(135, 126, 126);
+    border-left: 3px solid #877e7e;
+    border-right: 3px solid #877e7e;
     background-color: #afa79c;
 }
 
@@ -22,13 +22,24 @@ a {
 
 p {
     font-size: 15px;
-    color: #6e675d;
+    color: #524d47;
+}
+
+.hr-white {
+    width: 60%;
+    border-top: 5px dotted #f7f2ec;
+}
+
+.hr-grey {
+    width: 60%;
+    border-top: 5px dotted #afa79c;
+    border-bottom: none;
 }
 
 /* === Navigation Bar === */
 header {
     top: 0;
-    width: 75%;
+    width: 70%;
     min-width: 900px;
     margin: auto;
     position: fixed;
@@ -36,7 +47,7 @@ header {
 }
 
 nav {
-    background-color: rgb(247, 242, 236);
+    background-color: #f7f2ec;
     border-bottom: 5px dotted #afa79c;
     list-style: none;
     margin: auto;
@@ -44,7 +55,7 @@ nav {
 
 nav ul li, a {
     display: inline-block;
-    color: #6e675d;
+    color: #524d47;
     padding: 0px 10px 0px 10px;
 }
 
@@ -62,19 +73,21 @@ nav ul a {
 }
 
 #navbar-logo {
-    padding-left: 20px;
+    padding: 5px 0 0 5px;
 }
 
 #navbar-sections {
     padding-right: 20px;
 }
 
-/* === Main Body === */
+/* ====== About HTML ====== */
+
+/* = Main Body = */
 main {
     background-color: rgb(247, 242, 236);
 }
 
-/* === Home Section === */
+/* = Home Section = */
 #home-image {
     height: 100%;
     max-width: 100%; 
@@ -85,7 +98,7 @@ main {
     padding-top: 75px;
 }
 
-/* === About Section === */
+/* = About Section = */
 #about-section {
     background-color: rgb(246, 192, 192);
     width: 100%;
@@ -94,7 +107,7 @@ main {
 
 h3 {
     font: 30px/20px 'Trebuchet MS', sans-serif;
-    color: rgb(175, 75, 75);
+    color: #af4b4b;
     /*color: rgb(186, 87, 87);*/
 }
 
@@ -103,22 +116,17 @@ h3 {
     font-size: 15px;
 }
 
-.hr-about {
-    width: 60%;
-    border-top: 5px dotted rgb(247, 242, 236);
-}
-
-/* === Learning Section === */
+/* = Learning Section = */
 h5 {
-    width: 75%;
+    width: 50%;
     padding: 10px 0 10px 0;
     margin: auto;
-    background-color: rgb(246, 192, 192);
+    background-color: #f6c0c0;
     border-radius: 10px;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     font: 20px/20px 'Trebuchet MS', sans-serif;
-    color: #6e675d;
+    color: #524d47;
 }
 
 #certificates-container {
@@ -145,13 +153,7 @@ h5 {
     height: auto;
 }
 
-.hr-learning {
-    width: 60%;
-    border-top: 5px dotted #afa79c;
-    border-bottom: none;
-}
-
-/* === 30 Nites of Code === */
+/* = 30 Nites of Code = */
 #nites-container {
     display: flex;
     align-items: center;
@@ -168,16 +170,16 @@ h5 {
 .nites-link {
     text-decoration: none;
     font: 20px/20px 'Trebuchet MS', sans-serif;
-    color: rgb(175, 75, 75);
+    color: #af4b4b;
 }
 
 .nites-pets {
-    background-color: rgb(247, 242, 236);
+    background-color: #f7f2ec;
     border: 5px #afa79c dotted;
     border-radius: 50%;
 }
 
-/* === Progress Bar === */
+/* = Progress Bar = */
 .progress-bar-row {
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +189,7 @@ h5 {
 }
 
 .progress-bar-container { 
-    background-color: rgb(247, 242, 236); 
+    background-color: #f7f2ec; 
     width: 40%; 
     margin: auto;
     border-radius: 15px;
@@ -196,7 +198,7 @@ h5 {
 } 
 
 .skill { 
-    background-color: rgb(175, 75, 75); 
+    background-color: #af4b4b; 
     color: white; 
     padding: 1% 1% 1% 3%; 
     text-align: left; 
@@ -212,11 +214,13 @@ h5 {
 .python { width: 50%; }
 
 
-/* === Projects Section === */
+/* ====== Projects HTML ====== */
+
 #projects-section {
-    background-color: rgb(247, 242, 236);
-    width: 100%;
-    padding: 90px 0 20px 0;
+    background-color: #f7f2ec;
+    width: 90%;
+    margin: auto;
+    padding: 0px 0 20px 0;
 }
 
 #projects-container {
@@ -230,19 +234,45 @@ h5 {
     margin: auto;
 }
 
-#projects-container img {
+/* = Cats in Crocs =*/
+#figma-container {
     width: 100%;
 }
 
-/* === Cats in Crocs ===*/
-#figma-container img {
+#cic-cats {
     display: inline-block;
-    margin: 10px;
 }
 
-/* === Footer ===*/
+.cic-cats-img {
+    width: 18%;
+    padding: 5px;
+}
+
+#cic-intro {
+    display: inline-block;
+    justify-content: center;
+}
+
+.cic-intro-img {
+    width: 48%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#cic-puzzles {
+    display: inline-block;
+    justify-content: center;
+}
+
+.cic-puzzles-img {
+    width: 31%;
+    padding: 5px;
+}
+
+/* ====== Footer ======*/
+
 footer {
-    background-color: rgb(247, 242, 236);
+    background-color: #f7f2ec;
     height: 50px;
     display: flex;
     align-items: center;
@@ -251,5 +281,5 @@ footer {
 }
 
 footer p {
-    color: rgb(135, 126, 126);
+    color: #524d47;
 }
