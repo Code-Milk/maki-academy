@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>makicodes</title>
+  <title>𓆩♡ makicodes ♡𓆪</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
   <header>
+<!-- Navigation Bar -->
     <nav>
       <div id="navbar-container">
         <img id="navbar-logo" alt="makicodes-logo" src="Images/logo.png" width="225px">
@@ -20,16 +21,39 @@
     </nav>
   </header>
   <main>
-    <section id="contact-form">
-      <div>
-        <form>
-          hi
+<!-- Contact Section -->
+    <div style="width: 100%; height: 70px; background-color: #f7f2ec;"></div>
+    <h3>-ˋˏ Contact Me!  ˎˊ-</h3>
+    <p style="padding-bottom: 20px;">˚. ୭ ˚○◦˚ Email: <i>kellylim2014@gmail.com</i> ˚◦○˚ ୧ .˚</p>
+    <section id="contact-section">
+  <!-- Contact Links -->
+      <div class="contact-container-1">
+        <div class="contact-links">
+          <a href="https://github.com/Code-Milk/maki-academy" target="_blank"><img src="Images/github.png" alt="github icon" class="contact-icon"></a>
+        </div>
+        <div class="contact-links">
+          <!-- GitHub Placeholder until I update my LinkedIn! -->
+          <a href="https://github.com/Code-Milk/maki-academy" target="_blank"><img src="Images/linkedin.png" alt="linkedin icon" class="contact-icon"></a>
+        </div>
+        <div class="contact-links">
+          <a href="https://twitter.com/makicodes" target="_blank"><img src="Images/twitter.png" alt="twitter icon" class="contact-icon"></a>
+        </div>
+        <!-- Icons made by IconsBox (https://www.flaticon.com/authors/iconsbox)  -->
+      </div>
+  <!-- Contact Form -->
+      <div class="contact-container-2">
+        <form id="contact-form">
+          <label for="full-name" class="contact-label">Full Name</label>
+            <input type="text" id="full-name" name="name" placeholder=" Your full name" class="contact-input" required><br>
+          <label for="email" class="contact-label">Email Address</label>
+            <input type="email" id="email" name="email" placeholder=" Your email address" class="contact-input" required><br>
+          <label for="subject" class="contact-label">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder=" Subject" class="contact-input"><br>
+          <label for="message" class="contact-label">Message</label>
+            <textarea name="message" placeholder=" Type here!" style="height: 100px" class="contact-input"></textarea><br>
+          <input type="submit" value="Submit" id="submit-button">
         </form>
       </div>
-    </section>
-    <section id="contact-section">
-      GitHub
-      Twitter
     </section>
   </main>
 <!-- Footer Section -->  

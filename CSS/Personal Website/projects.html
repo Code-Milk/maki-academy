@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+<!-- Navigation Bar -->
     <nav>
       <div id="navbar-container">
         <img id="navbar-logo" alt="makicodes-logo" src="Images/logo.png" width="225px">
@@ -20,50 +21,61 @@
     </nav>
   </header>
   <main>
+<!-- Projects Section -->
     <div style="width: 100%; height: 50px; background-color: #f7f2ec;"></div><br>
     <section id="projects-section">
       <div id="projects-container">
+  <!-- Python Section -->
         <div class="projects-div" id="lorcana">
           <h3>˗ˏˋ Python ´ˎ˗</h3>
           <hr><br>
-            <a href="https://github.com/Code-Milk/maki-academy/tree/main/Python" target="_blank"><h5>Lorcana Library</h5></a>
+            <a href="https://github.com/Code-Milk/maki-academy/tree/main/Python" target="_blank" class="project-links"><h5>⭐Lorcana Library⭐</h5></a>
               <p>Developed a Lorcana TCG Library for Set 1: The First Chapter.<br><br>The main feature of this library is the filtering system, allowing users to search for cards by various categories such as Ink Color, Ink Cost, Keywords, and more. Upon searching, the library displays all relevant cards matching the user's criteria. Additionally, the library includes a Lore Counter feature, enabling players to track their scores and race to gain 20 points/lore. For those who wants more of an understanding of the game mechanics, a detailed Game Rules section is available.</p>
               <img src="https://wiki.mushureport.com/images/thumb/5/57/Disney_Lorcana_TCG_Logo_transparent.png/1200px-Disney_Lorcana_TCG_Logo_transparent.png" alt="lorcana-library-img" style="width: 60%; margin: auto;">
-        </div>
+              <p class="future-text"><i>Future</i>: Pick up a framework, update the database, and add a deck building feature. I want to showcase the usability of the filtering system, and make it easier for users to navigate the program.</p>
+            </div>
         <br>
+    <!-- HTML + CSS Section -->
         <div class="projects-div" id="html-css">
           <hr>
           <h3>˗ˏˋ HTML + CSS ´ˎ˗</h3>
           <hr><br>
+      <!-- Studio Grubli Subsection -->
           <div class="projects-div" id="studio-grubli">
-            <a href="https://github.com/Code-Milk/maki-academy/blob/main/HTML/Project/restaurant_menu.html" target="_blank"><h5>⭐Studio Grubli⭐</h5></a>
+            <a href="https://github.com/Code-Milk/maki-academy/blob/main/HTML/Project/restaurant_menu.html" target="_blank" class="project-links"><h5>⭐Studio Grubli⭐</h5></a>
               <p>Restaurant Menu inspired by some of the delicious foods in Studio Ghibli. Enjoy a little sneak peek! 🍴
                 <br>Final Project for the HTML course on Codedex and used a little bit of CSS to complete.
               </p>
               <img src="Images/studio_grubli.png" alt="studio-grubli-img" style="width: 100%;">
+              <p class="future-text"><i>Future</i>: Once I learn more JavaScript/React, I'd like to revisit this project and add more features to make it a fun restaurant experience.</p>
           </div>
           <br><hr class="hr-grey"><br>
+      <!-- Personal Website Subsection -->
           <div class="projects-div" id="personal-website">
-            <h5>Personal Website</h5>
-            <p>I envisioned my personal website as a virtual sketchbook not only to showcase my creative hobbies, but also underscore my proficiency in design, art, and the craftsmanship of coding it from scratch. My goal was to merge the realms of coding and artistry, crafting a digital experience that captivates with its blend of functionality and creativity.
-              <br>
-            </p>
+            <h5>⭐Personal Website⭐</h5>
+            <p>I envisioned my personal website as a virtual sketchbook not only to showcase my creative hobbies, but also underscore my proficiency in design, art, and the craftsmanship of coding it from scratch. My goal was to merge the realms of coding and artistry, crafting a digital experience that captivates with its blend of functionality and creativity.</p>
+            <video width="100%" controls>
+              <source src="Images/website_demo.mp4" type="video/mp4">
+            </video>
+            <p class="future-text"><i>Future</i>: Keep updating my projects, certificates, and all of my progress onto this website. I'd like to add more animated features to this website to emulate the sketchbook experience.</p>
           </div>
         </div>
         <br><br>
+      <!-- Cats in Crocs Subsection -->
         <div class="projects-div" id="cic">
           <hr>
           <h3>˗ˏˋ Godot + Figma ´ˎ˗</h3>
           <hr><br>
-            <h5>Cats in Crocs</h5>
+            <h5>⭐Cats in Crocs⭐</h5>
             <p><i>Senior Design Project</i><br>
               <br><b>"Cats in Crocs"</b> is an immersive puzzle game designed to teach the 10 Usability Heuristics Laws in a fun and engaging way. Hop on this journey as you step into a whimsical world where cats wears crocs on their heads. Guided by a friendly neighborhood wizard in a croc, where you'll navigate through a series of puzzles designed to learn each usability law. Developed using Godot Engine and GDScript for seamless functionality, and brought to life with captivating designs crafted using Figma and Procreate.  
             </p>
             <br><hr class="hr-grey">
-            <div id="figma-container">
+            <div id="cic-container">
+        <!-- CiC Cats -->
               <div id="cic-cats">
                 <p>Meet the lovely Cats in a Croc!
-                  <br><br>We have the lovely friendly neighborhood wizard, Jewel, Pierre, Bella, and the old man.<br>All of these characters were drawn by me using Procreate. The paw was created by me using Figma.
+                  <br><br>We have the lovely friendly neighborhood wizard, Jewel, Pierre, Bella, and the old man.<br>All of these characters were drawn by me using Procreate. The paw, icons, and majority of the button elements were created by me using Figma.
                 </p>
                 <img src="CiC/Cic_Cats_1.png" alt="cic-cat-main" class="cic-cats-img">
                 <img src="CiC/Cic_Cats_2.png" alt="cic-cat-2" class="cic-cats-img">
@@ -73,17 +85,24 @@
                 <img src="CiC/Paw_Selector_2.png" alt="cic-cat-paw" class="cic-cats-img">
               </div>
               <br><hr class="hr-grey">
+        <!-- CiC Startup -->
               <div id="cic-intro">
-                <p>This is the Main Screen of the game, so this is what you'll see when you first open it. The second picture is the Puzzle Select page where you can navigate to different levels as you unlock each one. This is an earlier design when we started out with 5 puzzles.</p>
-                <img src="CiC/Main_Screen.png" alt="cic-main-screen" class="cic-intro-img">
-                <img src="CiC/Screen_Select.png" alt="cic-main-screen" class="cic-intro-img">
+                <p>This is the Main Screen of the game, so this is what you'll see when you first launch Cats in Crocs. The second picture is the Puzzle Select page where you can navigate to different levels as you unlock each one. This is an earlier design when we started out with 5 puzzles.</p>
+                <div class="cic-intro-container">
+                  <img src="CiC/Main_Screen.png" alt="cic-main-screen" class="cic-intro-img">
+                  <p>Main Screen</p>
+                </div>
+                <div class="cic-intro-container">
+                  <img src="CiC/Screen_Select.png" alt="cic-main-screen" class="cic-intro-img">
+                  <p>Puzzle Select Screen</p>
+                </div>  
               </div>
               <br><br>
               <hr class="hr-grey">
+        <!-- CiC Puzzles -->
               <div id="cic-puzzles">
-                <p>Some of the Puzzles I designed using Figma
-                  <br><br>We originally started with 5 puzzles and later decided to do a puzzle for each Usability Law. You can see the design slightly change to incorporate all puzzle levels. The user is supposed to build upon each law and apply them to each "project" they are assigned. You are then rewarded with a Jibbit to add to your own personal croc.
-                </p>
+                <p>Puzzles I designed using Figma</p>
+                <p>Here we have a few sample ideas of the puzzles designed, we originally started with 5 puzzles and later decided to do a puzzle for each of the <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" style="padding: 0px; font-weight: bold;">10 Usability Laws</a>. You can see the design slightly change to incorporate all puzzle levels. The user is to build upon each law and apply them to each "project" they are assigned. You are then rewarded with a Jibbit to add to your own personal croc.</p>
                 <img src="CiC/Puzzle_Complete_1.png" alt="cic-puzzle-1" class="cic-puzzles-img">
                 <img src="CiC/Puzzle_Complete_2.png" alt="cic-puzzle-2" class="cic-puzzles-img">
                 <img src="CiC/Puzzle_Complete_3.png" alt="cic-puzzle-3" class="cic-puzzles-img">
@@ -93,10 +112,13 @@
               </div>
               <br><br>
               <hr class="hr-grey">
+        <!-- CiC Demo -->
               <p>Demo of <b>Cats in Crocs</b></p>
+              <p>All button elements, screen navigation, and effects are functional using GDScript in Godot.</p>
               <video width="100%" controls>
                 <source src="CiC/CiC-Demo.mp4" type="video/mp4">
               </video>
+              <p class="future-text" style="padding-top: 20px;"><i>Future</i>: Hopefully, complete this game! Unfortunately, my teammates that I was working with for this project had to drop and we were not able to finish it. I think it's such a fun learning utility that others could learn from. I would like to improve the dialogue, art, and get the puzzle features running.</p>
             </div>
         </div>
       </div>

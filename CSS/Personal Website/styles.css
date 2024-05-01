@@ -1,3 +1,4 @@
+/* ===== General/Base Styles ===== */
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 70%;
@@ -10,19 +11,36 @@ body {
     background-color: #afa79c;
 }
 
-hr {
-    width: 99%;
-    border-top: 5px dotted #afa79c;
-    border-bottom: none;
+main { background-color: rgb(247, 242, 236); }
+
+h3 {
+    font: 30px/20px 'Trebuchet MS', sans-serif;
+    color: #af4b4b;
 }
 
-a {
-    text-decoration: none;
+h5 {
+    width: 50%;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    background-color: #f6c0c0;
+    border-radius: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font: 20px/20px 'Trebuchet MS', sans-serif;
+    color: #524d47;
 }
+
+a { text-decoration: none; }
 
 p {
     font-size: 15px;
     color: #524d47;
+}
+
+hr {
+    width: 99%;
+    border-top: 5px dotted #afa79c;
+    border-bottom: none;
 }
 
 .hr-white {
@@ -36,7 +54,7 @@ p {
     border-bottom: none;
 }
 
-/* === Navigation Bar === */
+/* ===== Navigation Bar ===== */
 header {
     top: 0;
     width: 70%;
@@ -80,12 +98,8 @@ nav ul a {
     padding-right: 20px;
 }
 
-/* ====== About HTML ====== */
 
-/* = Main Body = */
-main {
-    background-color: rgb(247, 242, 236);
-}
+/* ====== About HTML ====== */
 
 /* = Home Section = */
 #home-image {
@@ -105,30 +119,12 @@ main {
     padding: 20px 0 20px 0;
 }
 
-h3 {
-    font: 30px/20px 'Trebuchet MS', sans-serif;
-    color: #af4b4b;
-    /*color: rgb(186, 87, 87);*/
-}
-
-#about-text, #learning-section > p {
+#about-text, #learning-section p {
     padding: 0 125px 0 125px;
     font-size: 15px;
 }
 
 /* = Learning Section = */
-h5 {
-    width: 50%;
-    padding: 10px 0 10px 0;
-    margin: auto;
-    background-color: #f6c0c0;
-    border-radius: 10px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    font: 20px/20px 'Trebuchet MS', sans-serif;
-    color: #524d47;
-}
-
 #certificates-container {
     width: 100%;
     display: flex;
@@ -186,6 +182,7 @@ h5 {
     align-content: center;
     width: 80%;
     margin: auto;
+    padding-top: 10px;
 }
 
 .progress-bar-container { 
@@ -206,12 +203,12 @@ h5 {
     border-radius: 15px;
 } 
 
-.sql { width: 30%; }
-.react { width: 10%; }
-.figma { width: 60%; }
-.css { width: 40%; }
+.python { width: 60%; }
+.sql { width: 20%;}
 .html { width: 50%; }
-.python { width: 50%; }
+.css { width: 40%; }
+.javascript { width: 10%; }
+.figma { width: 60%; }
 
 
 /* ====== Projects HTML ====== */
@@ -228,48 +225,106 @@ h5 {
     font-size: 15px;
 }
 
-#projects-container a {
+.future-text {
+    font-size: 13px;
+    width: 75%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+
+.project-links {
     text-decoration: none;
     width: 100%;
     margin: auto;
 }
 
 /* = Cats in Crocs =*/
-#figma-container {
-    width: 100%;
-}
+#cic-container { width: 100%; }
 
-#cic-cats {
-    display: inline-block;
-}
+/* Cic Cats*/
+#cic-cats { display: inline-block; }
 
 .cic-cats-img {
     width: 18%;
     padding: 5px;
 }
 
+/* Cic Intro */
 #cic-intro {
-    display: inline-block;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.cic-intro-container { width: 50%; }
+
+.cic-intro-container p { margin: 0; }
+
 .cic-intro-img {
-    width: 48%;
+    width: 90%;
     border-radius: 10px;
     padding: 5px;
 }
 
+/* Cic Puzzles*/
 #cic-puzzles {
     display: inline-block;
     justify-content: center;
 }
 
 .cic-puzzles-img {
-    width: 31%;
-    padding: 5px;
+    width: 32%;
+    padding: 3px;
 }
 
-/* ====== Footer ======*/
+
+/* ====== Contact Page ====== */
+
+#contact-section {
+    width: 90%;
+    margin: auto;
+    padding: 0px 0 50px 0;
+    display: flex;
+}
+
+/* Contact Links */
+.contact-container-1 {
+    width: 30%;
+    padding-top: 10px;
+}
+
+.contact-icon {
+    padding-top: 5px;
+    width: 120px;
+}
+
+/* Contact Form */
+.contact-container-2 { width: 60%; }
+
+#contact-form {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-label { display: block; }
+
+.contact-input {
+    width: 90%;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 15px 0;
+    border-radius: 10px;
+}
+
+#submit-button {
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: #f6c0c0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #524d47;
+    font-size: 15px;
+}
+
+/* ====== Footer ====== */
 
 footer {
     background-color: #f7f2ec;
@@ -280,6 +335,4 @@ footer {
     border-top: 5px dotted #afa79c;
 }
 
-footer p {
-    color: #524d47;
-}
+footer p { color: #524d47; }
