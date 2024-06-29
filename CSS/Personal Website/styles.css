@@ -1,13 +1,40 @@
+/* ===== General/Base Styles ===== */
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 75%;
+    max-width: 70%;
     min-width: 900px;
     height: 100%;
     margin: auto;
     text-align: center;
-    border-left: 3px solid rgb(135, 126, 126);
-    border-right: 3px solid rgb(135, 126, 126);
+    border-left: 3px solid #877e7e;
+    border-right: 3px solid #877e7e;
     background-color: #afa79c;
+}
+
+main { background-color: rgb(247, 242, 236); }
+
+h3 {
+    font: 30px/20px 'Trebuchet MS', sans-serif;
+    color: #af4b4b;
+}
+
+h5 {
+    width: 50%;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    background-color: #f6c0c0;
+    border-radius: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font: 20px/20px 'Trebuchet MS', sans-serif;
+    color: #524d47;
+}
+
+a { text-decoration: none; }
+
+p {
+    font-size: 15px;
+    color: #524d47;
 }
 
 hr {
@@ -16,19 +43,21 @@ hr {
     border-bottom: none;
 }
 
-a {
-    text-decoration: none;
+.hr-white {
+    width: 60%;
+    border-top: 5px dotted #f7f2ec;
 }
 
-p {
-    font-size: 15px;
-    color: #6e675d;
+.hr-grey {
+    width: 60%;
+    border-top: 5px dotted #afa79c;
+    border-bottom: none;
 }
 
-/* === Navigation Bar === */
+/* ===== Navigation Bar ===== */
 header {
     top: 0;
-    width: 75%;
+    width: 70%;
     min-width: 900px;
     margin: auto;
     position: fixed;
@@ -36,7 +65,7 @@ header {
 }
 
 nav {
-    background-color: rgb(247, 242, 236);
+    background-color: #f7f2ec;
     border-bottom: 5px dotted #afa79c;
     list-style: none;
     margin: auto;
@@ -44,7 +73,7 @@ nav {
 
 nav ul li, a {
     display: inline-block;
-    color: #6e675d;
+    color: #524d47;
     padding: 0px 10px 0px 10px;
 }
 
@@ -62,19 +91,17 @@ nav ul a {
 }
 
 #navbar-logo {
-    padding-left: 20px;
+    padding: 5px 0 0 5px;
 }
 
 #navbar-sections {
     padding-right: 20px;
 }
 
-/* === Main Body === */
-main {
-    background-color: rgb(247, 242, 236);
-}
 
-/* === Home Section === */
+/* ====== About HTML ====== */
+
+/* = Home Section = */
 #home-image {
     height: 100%;
     max-width: 100%; 
@@ -85,42 +112,19 @@ main {
     padding-top: 75px;
 }
 
-/* === About Section === */
+/* = About Section = */
 #about-section {
     background-color: rgb(246, 192, 192);
     width: 100%;
     padding: 20px 0 20px 0;
 }
 
-h3 {
-    font: 30px/20px 'Trebuchet MS', sans-serif;
-    color: rgb(175, 75, 75);
-    /*color: rgb(186, 87, 87);*/
-}
-
-#about-text, #learning-section > p {
+#about-text, #learning-section p {
     padding: 0 125px 0 125px;
     font-size: 15px;
 }
 
-.hr-about {
-    width: 60%;
-    border-top: 5px dotted rgb(247, 242, 236);
-}
-
-/* === Learning Section === */
-h5 {
-    width: 75%;
-    padding: 10px 0 10px 0;
-    margin: auto;
-    background-color: rgb(246, 192, 192);
-    border-radius: 10px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    font: 20px/20px 'Trebuchet MS', sans-serif;
-    color: #6e675d;
-}
-
+/* = Learning Section = */
 #certificates-container {
     width: 100%;
     display: flex;
@@ -145,13 +149,7 @@ h5 {
     height: auto;
 }
 
-.hr-learning {
-    width: 60%;
-    border-top: 5px dotted #afa79c;
-    border-bottom: none;
-}
-
-/* === 30 Nites of Code === */
+/* = 30 Nites of Code = */
 #nites-container {
     display: flex;
     align-items: center;
@@ -168,26 +166,27 @@ h5 {
 .nites-link {
     text-decoration: none;
     font: 20px/20px 'Trebuchet MS', sans-serif;
-    color: rgb(175, 75, 75);
+    color: #af4b4b;
 }
 
 .nites-pets {
-    background-color: rgb(247, 242, 236);
+    background-color: #f7f2ec;
     border: 5px #afa79c dotted;
     border-radius: 50%;
 }
 
-/* === Progress Bar === */
+/* = Progress Bar = */
 .progress-bar-row {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     width: 80%;
     margin: auto;
+    padding-top: 10px;
 }
 
 .progress-bar-container { 
-    background-color: rgb(247, 242, 236); 
+    background-color: #f7f2ec; 
     width: 40%; 
     margin: auto;
     border-radius: 15px;
@@ -196,7 +195,7 @@ h5 {
 } 
 
 .skill { 
-    background-color: rgb(175, 75, 75); 
+    background-color: #af4b4b; 
     color: white; 
     padding: 1% 1% 1% 3%; 
     text-align: left; 
@@ -204,19 +203,21 @@ h5 {
     border-radius: 15px;
 } 
 
-.sql { width: 30%; }
-.react { width: 10%; }
-.figma { width: 60%; }
-.css { width: 40%; }
+.python { width: 60%; }
+.sql { width: 20%;}
 .html { width: 50%; }
-.python { width: 50%; }
+.css { width: 40%; }
+.javascript { width: 10%; }
+.figma { width: 60%; }
 
 
-/* === Projects Section === */
+/* ====== Projects HTML ====== */
+
 #projects-section {
-    background-color: rgb(247, 242, 236);
-    width: 100%;
-    padding: 90px 0 20px 0;
+    background-color: #f7f2ec;
+    width: 90%;
+    margin: auto;
+    padding: 0px 0 20px 0;
 }
 
 #projects-container {
@@ -224,25 +225,109 @@ h5 {
     font-size: 15px;
 }
 
-#projects-container a {
+.future-text {
+    font-size: 13px;
+    width: 75%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+
+.project-links {
     text-decoration: none;
     width: 100%;
     margin: auto;
 }
 
-#projects-container img {
-    width: 100%;
+/* = Cats in Crocs =*/
+#cic-container { width: 100%; }
+
+/* Cic Cats*/
+#cic-cats { display: inline-block; }
+
+.cic-cats-img {
+    width: 18%;
+    padding: 5px;
 }
 
-/* === Cats in Crocs ===*/
-#figma-container img {
+/* Cic Intro */
+#cic-intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cic-intro-container { width: 50%; }
+
+.cic-intro-container p { margin: 0; }
+
+.cic-intro-img {
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Cic Puzzles*/
+#cic-puzzles {
     display: inline-block;
-    margin: 10px;
+    justify-content: center;
 }
 
-/* === Footer ===*/
+.cic-puzzles-img {
+    width: 32%;
+    padding: 3px;
+}
+
+
+/* ====== Contact Page ====== */
+
+#contact-section {
+    width: 90%;
+    margin: auto;
+    padding: 0px 0 50px 0;
+    display: flex;
+}
+
+/* Contact Links */
+.contact-container-1 {
+    width: 30%;
+    padding-top: 10px;
+}
+
+.contact-icon {
+    padding-top: 5px;
+    width: 120px;
+}
+
+/* Contact Form */
+.contact-container-2 { width: 60%; }
+
+#contact-form {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-label { display: block; }
+
+.contact-input {
+    width: 90%;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 15px 0;
+    border-radius: 10px;
+}
+
+#submit-button {
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: #f6c0c0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #524d47;
+    font-size: 15px;
+}
+
+/* ====== Footer ====== */
+
 footer {
-    background-color: rgb(247, 242, 236);
+    background-color: #f7f2ec;
     height: 50px;
     display: flex;
     align-items: center;
@@ -250,6 +335,4 @@ footer {
     border-top: 5px dotted #afa79c;
 }
 
-footer p {
-    color: rgb(135, 126, 126);
-}
+footer p { color: #524d47; }
