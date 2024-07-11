@@ -16,11 +16,6 @@ p {
   margin: 0;
 }
 
-.app-message {
-  height: 20px;
-  margin: 10px auto 20px auto;
-}
-
 .app-container {
   width: 250px;
   height: 420px;
@@ -34,7 +29,7 @@ p {
   font-family: 'Droid Sans Mono', monospace;
   font-size: 250%;
   position: relative;
-  top: 50px;
+  top: 5px;
   color: #d8e9ef;
 }
 
@@ -66,9 +61,9 @@ button:hover {
 }
 
 .box {
-  border: 2px solid green;
+  border: 2px solid rgb(72, 34, 38);
   border-radius: 5px;
-  background-color: purple;
+  background-color: rgb(151, 97, 115);
   padding: 1em;
   color: orange;
 }

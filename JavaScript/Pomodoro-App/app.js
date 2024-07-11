@@ -1,5 +1,7 @@
 const bells = new Audio('./sounds/bell.wav'); 
-const startBtn = document.querySelector('.btn-start'); 
+const startBtn = document.querySelector('.btn-start');
+const stopBtn = document.querySelector('.btn-stop'); 
+const resetBtn = document.querySelector('.btn-reset');
 const session = document.querySelector('.minutes'); 
 let myInterval; 
 let state = true;
