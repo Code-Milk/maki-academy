@@ -1,15 +1,16 @@
+/* Pomodoro */
+
 html {
   font-family: 'Fira Sans', sans-serif;
   font-size: 20px;
   letter-spacing: 0.8px;
   min-height: 100vh;
-  color: #d8e9ef;
   background-color: white;
 }
 
 h1 {
   margin: 0 auto 10px auto;
-  color: #d8e9ef;
+  color: #924f56;
 }
 
 p {
@@ -27,28 +28,42 @@ p {
 
 .app-counter-box {
   font-family: 'Droid Sans Mono', monospace;
-  font-size: 250%;
+  font-size: 300%;
   position: relative;
-  top: 5px;
-  color: #d8e9ef;
+  color: white;
+  margin-bottom: 10px;
 }
 
-button {
+.timer-btn {
   top: 50px;
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  background: white;
+  color: #924f56;
   border: none;
-  background: none;
-  outline: none;
-  color: #d8e9ef;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}
+
+.btn-start, .btn-pause {
+  font-size: 100%;
+  border: 3px double #924f56;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 button:hover {
-  color: #90c0d1;
+  color: #eab0b2;
+  background-color: #924f56;
 }
 
-/* CSS Grid - Start */
+#box-timer {
+  display: grid;
+  place-content: center;
+}
+
+/* CSS Grid - Pomodoro */
 * {
   box-sizing: border-box;
 }
@@ -61,11 +76,10 @@ button:hover {
 }
 
 .box {
-  border: 2px solid rgb(72, 34, 38);
-  border-radius: 5px;
-  background-color: rgb(151, 97, 115);
+  border: 2px solid #924f56;
+  border-radius: 15px;
+  background-color: #eab0b2;
   padding: 1em;
-  color: orange;
 }
 
 .box1 {
@@ -73,4 +87,92 @@ button:hover {
   grid-row: 3/7;
 }
 
-/* CSS Grid - End */
+/* CSS Grid - Todo */
+.box2 {
+  grid-column: 5;
+  grid-row: 3/7;
+}
+
+/* Todo List */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
+}
+
+body { 
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#todo-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+#header {
+  font-size: 20px;
+  text-align: center;
+}
+
+#input-box {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#input-button {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 10px;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#input-button:hover {
+  color: #eab0b2;
+  background-color: #924f56;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+li {
+border: 2px solid #924f56;
+border-radius: 5px;
+margin-bottom: 10px;
+padding: 10px;
+margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+  float: inline-end;
+  color: gray;
+  cursor: pointer;
+  padding-top: 1px;
+  background: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-left: 5px;
+} 
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
+}
