@@ -1,3 +1,102 @@
+#cute-note {
+  margin-top: 0;
+  padding: 40px 0 20px 0;
+  font-family: 'Courier', monospace;
+  font-size: 30px;
+}
+
+/* CSS Grid */
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+}
+
+.box {
+  border: 2px solid #924f56;
+  border-radius: 15px;
+  background-color: #eab0b2;
+  padding: 1em;
+}
+
+.box1 { /* CSS Grid - Pomodoro */
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 225px;
+}
+
+.box2 { /* CSS Grid - Todo */
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Pomodoro */
+html {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+h2 {
+  margin: 0 auto 0 auto;
+  color: #924f56;
+}
+
+p {
+  margin: 0;
+}
+
+.app-counter-box {
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 300%;
+  position: relative;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.timer-btn {
+  top: 10px;
+  font-size: 80%;
+  text-transform: uppercase;
+  background: white;
+  color: #924f56;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 5px 0 5px;
+}
+
+.btn-start, .btn-pause {
+  font-size: 100%;
+  border: 2px solid #924f56;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #eab0b2;
+  background-color: #924f56;
+}
+
+#timer-container {
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  color: white;
+}
+
+#timer-btn-container {
+  margin: auto;
+}
+
+/* Todo List */
 .completed {
   text-decoration: line-through;
   color: gray;
@@ -5,52 +104,28 @@
 }
 
 body { 
-  background: whitesmoke;
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 50px;
-}
+  height: 90vh;
 
-
-/* = CSS Grid Layout - Start = */
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 100px;;
 }
-
-.item {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-/* = CSS Grid Layout - End = */
 
 #todo-container {
-  background: rgb(41, 33, 33);
   width: 400px;
   margin: 0 auto;
-  border: 2px solid #0033ff;
   padding: 20px;
   color: white;
   border-radius: 15px;
 }
 
-#header {
-  margin: 5px;
-  font-size: 20px;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px; 
+#todo-form {
+  padding-top: 10px;
 }
 
 #input-box {
   width: 200px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 8px;
+  border: 1px solid #924f56;
   border-radius: 5px;
   margin-right: 5px;
   font-size: 20px;
@@ -60,40 +135,45 @@ h1 {
   font-size: 20px;
   cursor: pointer;
   transition: 0.4s;
-  padding: 10px;
-  border: none;
+  padding: 8px;
+  color: #924f56;
+  border: 2px solid #924f56;
   border-radius: 5px;
-  background-color: #2e60ea;
+  background-color: white;
 }
 
 #input-button:hover {
-  background-color: #9eb7fd; 
+  color: #eab0b2;
+  background-color: #924f56;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
-  text-align:left;
-
+  margin-top: 10px;
+  text-align: left;
+  /* Scroll Bar */
+  max-height: 25vh;
+  overflow-y: auto;
 }
 
 li {
-border: 1px solid white;
-border-radius: 5px;
-margin-bottom: 10px;
-padding: 10px;
-margin-top: 10px;
+  border: 2px solid #924f56;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .edit-btn, .delete-btn {
-  float: right;
-  color:crimson;
+  float: inline-end;
+  color: gray;
   cursor: pointer;
-  margin: 3px 5px;
-  border: none;
-  padding: 3px 5px;
-  background: none;
+  padding-top: 1px;
+  background: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-left: 5px;
 } 
 
 .completed {

@@ -1,24 +1,28 @@
-const bells = new Audio('./sounds/bell.wav'); 
+const bells = new Audio('./sounds/bell.wav');
+
 // Feature Buttons
 const startBtn = document.querySelector('.btn-start');
 const resetBtn = document.querySelector('.btn-reset');
 const setTimerBtn = document.querySelector('.btn-set-time');
+
 // Pause Button
 const pauseBtn = document.createElement('button');
 pauseBtn.className = "btn-pause timer-btn";
 pauseBtn.textContent = "pause";
-// HTML Timer
+
+// HTML Minutes & Seconds
 const sessionMin = document.querySelector('.minutes');
 const sessionSec = document.querySelector('.seconds');
+
 // Global variable for Set Time func
 let updateMin = 1;
 
 // Interval State
 let myInterval;
-let timerOff = true; // true = off, false = on
+let timerOff = true; // state // true = off, false = on
 
 const pomodoroTimer = () => {
-    const sessionAmount = (Number.parseInt(sessionMin.textContent) * 60) + (Number.parseInt(sessionSec.textContent));
+    const sessionAmount = (Number.parseInt(sessionMin.textContent) * 60) + (Number.parseInt(sessionSec.textContent)); // Total seconds of time
 
     if(timerOff) {
         timerOff = false;
@@ -65,6 +69,7 @@ pauseBtn.addEventListener('click', () => {
     pauseBtn.parentNode.replaceChild(startBtn, pauseBtn);
 });
 
+// Set Timer
 setTimerBtn.addEventListener('click', function() {
     // Prompt
     updateMin = parseInt(prompt("Edit Time:", sessionMin.textContent));
@@ -81,30 +86,30 @@ setTimerBtn.addEventListener('click', function() {
     // Pause Timer
     clearInterval(myInterval);
     if(timerOff) { // Off
-        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
+        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn);
     } else { // On
         timerOff = true;
-        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
+        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn);
     }
 });
 
-// Reset Time
+// Reset Timer
 resetBtn.addEventListener('click', function() {
-    // Pause Timer
-    clearInterval(myInterval);
-    if(timerOff) { // Off
-        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
-    } else { // On
-        timerOff = true;
-        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
-    }
-
     // Set timer
-    if(updateMin === 1) { // Default
+    if(updateMin === 1) { // Default time
         sessionMin.textContent = 1;
         sessionSec.textContent = '00';
     } else { // Updated time
         sessionMin.textContent = updateMin;
         sessionSec.textContent = '00';
+    }
+
+    // Pause Timer
+    clearInterval(myInterval);
+    if(timerOff) { // Off
+        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn);
+    } else { // On
+        timerOff = true;
+        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn);
     }
 });
