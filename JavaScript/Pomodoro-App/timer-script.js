@@ -66,14 +66,6 @@ pauseBtn.addEventListener('click', () => {
 });
 
 setTimerBtn.addEventListener('click', function() {
-    clearInterval(myInterval);
-    if(timerOff) { // Off
-        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
-    } else { // On
-        timerOff = true;
-        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
-    }
-
     // Prompt
     updateMin = parseInt(prompt("Edit Time:", sessionMin.textContent));
     
@@ -85,10 +77,20 @@ setTimerBtn.addEventListener('click', function() {
     // Set Timer
     sessionMin.textContent = updateMin;
     sessionSec.textContent = '00';
+
+    // Pause Timer
+    clearInterval(myInterval);
+    if(timerOff) { // Off
+        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
+    } else { // On
+        timerOff = true;
+        pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start
+    }
 });
 
 // Reset Time
 resetBtn.addEventListener('click', function() {
+    // Pause Timer
     clearInterval(myInterval);
     if(timerOff) { // Off
         pauseBtn.parentNode.replaceChild(startBtn, pauseBtn); // Pause -> Start

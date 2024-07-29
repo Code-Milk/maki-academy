@@ -1,76 +1,18 @@
-/* Pomodoro */
-
-html {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  min-height: 100vh;
-  background-color: white;
+#cute-note {
+  margin-top: 0;
+  padding-bottom: 20px;
+  font-family: 'Courier', monospace;
+  font-size: 30px;
 }
 
-h1 {
-  margin: 0 auto 10px auto;
-  color: #924f56;
-}
-
-p {
-  margin: 0;
-}
-
-.app-container {
-  width: 250px;
-  height: 420px;
-  margin: 40px auto;
-  text-align: center;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.app-counter-box {
-  font-family: 'Droid Sans Mono', monospace;
-  font-size: 300%;
-  position: relative;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.timer-btn {
-  top: 50px;
-  font-size: 80%;
-  text-transform: uppercase;
-  background: white;
-  color: #924f56;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
-  margin: 5px;
-}
-
-.btn-start, .btn-pause {
-  font-size: 100%;
-  border: 3px double #924f56;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-button:hover {
-  color: #eab0b2;
-  background-color: #924f56;
-}
-
-#box-timer {
-  display: grid;
-  place-content: center;
-}
-
-/* CSS Grid - Pomodoro */
+/* CSS Grid */
 * {
   box-sizing: border-box;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 1em;
 }
@@ -82,15 +24,76 @@ button:hover {
   padding: 1em;
 }
 
-.box1 {
-  grid-column: 2/5;
-  grid-row: 3/7;
+.box1 { /* CSS Grid - Pomodoro */
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 225px;
 }
 
-/* CSS Grid - Todo */
-.box2 {
-  grid-column: 5;
-  grid-row: 3/7;
+.box2 { /* CSS Grid - Todo */
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Pomodoro */
+html {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+h2 {
+  margin: 0 auto 0 auto;
+  color: #924f56;
+}
+
+p {
+  margin: 0;
+}
+
+.app-counter-box {
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 300%;
+  position: relative;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.timer-btn {
+  top: 10px;
+  font-size: 80%;
+  text-transform: uppercase;
+  background: white;
+  color: #924f56;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 5px 0 5px;
+}
+
+.btn-start, .btn-pause {
+  font-size: 100%;
+  border: 2px solid #924f56;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #eab0b2;
+  background-color: #924f56;
+}
+
+#timer-container {
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  color: white;
+}
+
+#timer-btn-container {
+  margin: auto;
 }
 
 /* Todo List */
@@ -103,7 +106,7 @@ button:hover {
 body { 
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 #todo-container {
@@ -114,15 +117,14 @@ body {
   border-radius: 15px;
 }
 
-#header {
-  font-size: 20px;
-  text-align: center;
+#todo-form {
+  padding-top: 10px;
 }
 
 #input-box {
   width: 200px;
   padding: 10px;
-  border: 1px solid grey;
+  border: 1px solid #924f56;
   border-radius: 5px;
   margin-right: 5px;
   font-size: 20px;
@@ -133,8 +135,8 @@ body {
   cursor: pointer;
   transition: 0.4s;
   padding: 10px;
-  color: grey;
-  border: 2px solid grey;
+  color: #924f56;
+  border: 2px solid #924f56;
   border-radius: 5px;
   background-color: white;
 }
@@ -149,15 +151,14 @@ ul {
   padding: 0;
   margin-top: 20px;
   text-align: left;
-
 }
 
 li {
-border: 2px solid #924f56;
-border-radius: 5px;
-margin-bottom: 10px;
-padding: 10px;
-margin-top: 10px;
+  border: 2px solid #924f56;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .edit-btn, .delete-btn {
