@@ -126,8 +126,8 @@ nav ul a {
 
 /* = Learning Section = */
 #certificates-container {
-    width: 100%;
-    display: flex;
+    width: 75%;
+    display: inline-block;
     justify-content: center;
 }
 
@@ -135,15 +135,10 @@ nav ul a {
     width: 275px;
     height: auto;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
-#certificate-python {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
-
-#certificate-html {
+.certificate-img {
     display: inline-block;
     width: 100%;
     height: auto;
@@ -175,6 +170,19 @@ nav ul a {
     border-radius: 50%;
 }
 
+/* = Work in Progress = */
+#wip-bulletpoints {
+    text-align: left;
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+}
+
+li {
+    color: #524d47;
+    padding: 5px;
+}
+
 /* = Progress Bar = */
 .progress-bar-row {
     display: flex;
@@ -204,10 +212,10 @@ nav ul a {
 } 
 
 .python { width: 60%; }
-.sql { width: 20%;}
-.html { width: 50%; }
-.css { width: 40%; }
-.javascript { width: 10%; }
+.sql { width: 60%;}
+.html { width: 60%; }
+.css { width: 70%; }
+.javascript { width: 40%; }
 .figma { width: 60%; }
 
 
